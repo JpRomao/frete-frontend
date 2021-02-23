@@ -10,7 +10,7 @@ function App() {
   async function handleCalculate(e) {
     e.preventDefault();
 
-    const response = await axios.get('https://frete-ba.herokuapp.com/');
+    const response = await axios.get('https://frete-ba.herokuapp.com:3333/frete');
     const data = response.data;
 
     console.log(data);
